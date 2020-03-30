@@ -1,0 +1,23 @@
+/* Showcase */
+
+#work .projects {
+  grid-template-columns: 1fr;
+}
+
+#showcase {
+  background: url("../images/cpu2.jpg") no-repeat center center/cover;
+}
+
+#showcase .showcase-content .text-container {
+  margin-top: 5rem;
+}
+
+@media (max-width: 700px) {
+  #about .about-content {
+    display: block;
+  }
+
+  #about .about-content .about-image img {
+    display: none;
+  }
+}
