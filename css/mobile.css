@@ -13,11 +13,6 @@
 }
 
 @media (max-width: 700px) {
-  #showcase .showcase-content {
-    /* overlay */
-    height: 100%;
-  }
-
   #about .about-content {
     display: block;
   }
@@ -32,5 +27,11 @@
 @media (max-width: 500px) {
   #navbar ul {
     justify-content: center;
+  }
+
+  #showcase .showcase-content {
+    /* overlay */
+    margin-top: -2rem;
+    top: 140px;
   }
 }
