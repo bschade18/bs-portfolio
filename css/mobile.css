@@ -13,11 +13,24 @@
 }
 
 @media (max-width: 700px) {
+  #showcase .showcase-content {
+    /* overlay */
+    height: 100%;
+  }
+
   #about .about-content {
     display: block;
   }
 
   #about .about-content .about-image img {
     display: none;
+  }
+}
+
+/* Mobile Phones */
+
+@media (max-width: 500px) {
+  #navbar ul {
+    justify-content: center;
   }
 }
