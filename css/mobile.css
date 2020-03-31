@@ -20,6 +20,9 @@
   #about .about-content .about-image img {
     display: none;
   }
+  #showcase .showcase-content {
+    background: rgba(0, 0, 0, 0);
+  }
 }
 
 /* Mobile Phones */

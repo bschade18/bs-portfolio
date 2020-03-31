@@ -104,7 +104,6 @@ body {
 }
 
 #showcase .showcase-content {
-  /* overlay */
   position: absolute;
   top: 62px;
   left: 0;
