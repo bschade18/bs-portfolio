@@ -5,11 +5,11 @@
 }
 
 #showcase {
-  background: url("../images/cpu2.jpg") no-repeat center center/cover;
+  background: url('../images/cpu2.jpg') no-repeat center center/cover;
 }
 
 #showcase .showcase-content .text-container {
-  margin-top: 5rem;
+  padding-top: 5rem;
 }
 
 @media (max-width: 700px) {
