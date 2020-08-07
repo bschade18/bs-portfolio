@@ -18,8 +18,9 @@ p {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
 }
 
 /* Utility Class */
@@ -172,7 +173,7 @@ body {
 
 #about .about-content .about-text {
   padding: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
   flex: 1;
 }
 
