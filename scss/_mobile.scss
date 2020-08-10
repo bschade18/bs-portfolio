@@ -1,18 +1,6 @@
 /* Showcase */
 
-#work .projects {
-  grid-template-columns: 1fr;
-}
-
-#showcase {
-  background: url('../images/cpu2.jpg') no-repeat center center/cover;
-}
-
-#showcase .showcase-content .text-container {
-  padding-top: 5rem;
-}
-
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   #about .about-content {
     display: block;
   }
@@ -22,6 +10,18 @@
   }
   #showcase .showcase-content {
     background: rgba(0, 0, 0, 0);
+  }
+
+  #work .projects {
+    grid-template-columns: 1fr;
+  }
+
+  #showcase {
+    background: url('../images/cpu2.jpg') no-repeat center center/cover;
+  }
+
+  #showcase .showcase-content .text-container {
+    padding-top: 5rem;
   }
 }
 

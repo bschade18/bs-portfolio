@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+  a:visited {
+    color: #000; }
+
+p {
+  margin: 0.75rem 0; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  line-height: 1.5; }
+
+/* Utility Class */
+.container {
+  max-width: 1100px;
+  overflow: auto;
+  margin: auto;
+  padding: 0 1.5rem; }
+
+.text-primary {
+  color: #000; }
+
+.lg-heading {
+  font-size: 1.75rem; }
+
+.md-heading {
+  font-size: 2rem; }
+
+.py-1 {
+  padding: 1.5rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.pl-1 {
+  padding-left: 0.5rem; }
+
+.pl-2 {
+  padding-left: 1rem; }
+
+.pl-3 {
+  padding-left: 1.5rem; }
+
+.bg-light {
+  background: #f3f3f3; }
+
+.bg-dark {
+  background: #000; }
+
+.card {
+  background: #fff;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  border-radius: 10px; }
+
+/* Navbar */
+#navbar {
+  padding: 1rem;
+  background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; }
+    #navbar ul li a {
+      color: #fff;
+      margin: 0 0.5rem;
+      padding: 0.25rem;
+      border-radius: 5px;
+      display: block; }
+    #navbar ul a:hover {
+      background: #f3f3f3;
+      color: #000; }
+
+/* Showcase */
+#showcase {
+  background: url("../images/cpu.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  text-align: center; }
+  #showcase h1,
+  #showcase h3 {
+    padding-top: 1.25rem; }
+
+/* Work */
+#work {
+  background-color: #f3f3f3;
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem 0; }
+  #work .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem; }
+  #work .project {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem; }
+    #work .project-image {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid black;
+      transition: transform 0.2s; }
+      #work .project-image:hover {
+        transform: scale(1.01); }
+    #work .project-title {
+      font-size: 20px; }
+    #work .project-heading {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+/* About */
+#about {
+  background: #fff;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000; }
+  #about .about-content {
+    display: flex;
+    justify-content: flex-end; }
+    #about .about-content .about-image {
+      flex: 1;
+      display: flex;
+      justify-content: center; }
+      #about .about-content .about-image img {
+        border-radius: 10px; }
+    #about .about-content .about-text {
+      padding: 1rem;
+      line-height: 1.7;
+      flex: 1; }
+  #about h3 {
+    text-align: center;
+    margin-bottom: 1.5rem; }
+
+/* Contact */
+#contact {
+  text-align: center;
+  background: #f3f3f3;
+  font-size: 1rem;
+  line-height: 1.8; }
+  #contact address {
+    font-style: normal; }
+  #contact .phone-number {
+    text-decoration: none; }
+  #contact .footer-icons {
+    margin: 1rem; }
+
+/* icons */
+.icon {
+  font-size: 20px;
+  padding: 0.5rem;
+  color: #000;
+  transition: transform 0.2s; }
+  .icon:hover {
+    transform: scale(1.1); }
+
+.icon-lg {
+  font-size: 2.5rem;
+  transition: transform 0.2s; }
+
+/* Showcase */
+@media (max-width: 900px) {
+  #about .about-content {
+    display: block; }
+  #about .about-content .about-image img {
+    display: none; }
+  #showcase .showcase-content {
+    background: rgba(0, 0, 0, 0); }
+  #work .projects {
+    grid-template-columns: 1fr; }
+  #showcase {
+    background: url("../images/cpu2.jpg") no-repeat center center/cover; }
+  #showcase .showcase-content .text-container {
+    padding-top: 5rem; } }
+
+/* Mobile Phones */
+@media (max-width: 500px) {
+  #navbar ul {
+    justify-content: center; } }
