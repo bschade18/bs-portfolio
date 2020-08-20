@@ -21,7 +21,7 @@ p {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-stack;
   font-weight: bold;
   line-height: 1.5;
 }
@@ -268,7 +268,7 @@ body {
     outline: 0;
     border: 1px solid darkgray;
     border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-stack;
   }
 
   .contact-form input:focus,
@@ -278,7 +278,7 @@ body {
 
   .contact-form input::placeholder,
   .contact-form textarea::placeholder {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-stack;
   }
 
   .btn {

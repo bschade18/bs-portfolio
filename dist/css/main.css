@@ -13,7 +13,7 @@ p {
   margin: 0.75rem 0; }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   line-height: 1.5; }
 
@@ -52,7 +52,7 @@ body {
   padding-left: 1.5rem; }
 
 .bg-light {
-  background: #f3f3f3; }
+  background: #e9e9e9; }
 
 .bg-dark {
   background: #000; }
@@ -82,7 +82,7 @@ body {
       border-radius: 5px;
       display: block; }
     #navbar ul a:hover {
-      background: #f3f3f3;
+      background: #e9e9e9;
       color: #000; }
 
 /* Showcase */
@@ -97,7 +97,7 @@ body {
 
 /* Work */
 #work {
-  background-color: #f3f3f3;
+  background-color: #e9e9e9;
   width: 100%;
   text-align: center;
   padding: 2.5rem 0; }
@@ -174,7 +174,7 @@ body {
 
 /* Section: Contact Form */
 #contact {
-  background-color: #f3f3f3; }
+  background-color: #e9e9e9; }
   #contact form {
     padding: 1.5rem 0rem; }
   #contact h2 {
@@ -191,13 +191,13 @@ body {
     outline: 0;
     border: 1px solid darkgray;
     border-radius: 5px;
-    font-family: 'Roboto', sans-serif; }
+    font-family: "Roboto", sans-serif; }
   #contact .contact-form input:focus,
   #contact .contact-form textarea:focus {
     border-color: #333; }
   #contact .contact-form input::placeholder,
   #contact .contact-form textarea::placeholder {
-    font-family: 'Roboto', sans-serif; }
+    font-family: "Roboto", sans-serif; }
   #contact .btn {
     display: inline-block;
     color: #fff;
