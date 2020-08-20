@@ -202,11 +202,12 @@ body {
 }
 
 /* Contact */
-#contact {
+#footer {
   text-align: center;
-  background: $light-color;
+  background: $white-color;
   font-size: 1rem;
   line-height: 1.8;
+  border-top: 1px solid black;
 
   address {
     font-style: normal;
@@ -236,6 +237,62 @@ body {
 .icon-lg {
   font-size: 2.5rem;
   transition: transform 0.2s;
+}
+
+/* Section: Contact Form */
+
+#contact {
+  background-color: $light-color;
+
+  form {
+    padding: 1.5rem 3rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .contact-form .form-group {
+    margin: 0.75rem;
+  }
+
+  .contact-form label {
+    display: block;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 0.5rem;
+    font-size: 1rem;
+    outline: 0;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #333;
+  }
+
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .btn {
+    display: inline-block;
+    color: #fff;
+    background: black;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 100%;
+  }
+  .btn:hover {
+    background: #333;
+    color: white;
+    border: 1px solid black;
+  }
 }
 
 // Import media queries
