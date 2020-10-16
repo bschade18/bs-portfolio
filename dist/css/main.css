@@ -13,7 +13,7 @@ p {
   margin: 0.75rem 0; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   font-weight: bold;
   line-height: 1.5; }
 
@@ -77,8 +77,9 @@ body {
     justify-content: flex-end; }
     #navbar ul li a {
       color: #fff;
-      margin: 0 0.5rem;
+      margin: 0 0.75rem;
       padding: 0.25rem;
+      padding: 0.25rem 0.5rem;
       border-radius: 5px;
       display: block; }
     #navbar ul a:hover {
@@ -205,13 +206,13 @@ body {
     outline: 0;
     border: 1px solid darkgray;
     border-radius: 5px;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Libre Franklin", sans-serif; }
   #contact .contact-form input:focus,
   #contact .contact-form textarea:focus {
     border-color: #333; }
   #contact .contact-form input::placeholder,
   #contact .contact-form textarea::placeholder {
-    font-family: "Roboto", sans-serif; }
+    font-family: "Libre Franklin", sans-serif; }
   #contact .btn {
     display: inline-block;
     color: #fff;
