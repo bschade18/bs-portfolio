@@ -140,8 +140,9 @@ body {
   border-bottom: 1px solid #000;
   border-top: 1px solid #000; }
   #about .about-content {
-    display: flex;
-    justify-content: flex-end; }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; }
     #about .about-content .about-image {
       flex: 1;
       display: flex;
@@ -152,7 +153,6 @@ body {
         width: 350px;
         height: 350px; }
     #about .about-content .about-text {
-      padding: 1rem;
       line-height: 1.7;
       flex: 1; }
   #about h3 {
