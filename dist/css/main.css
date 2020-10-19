@@ -224,6 +224,10 @@ body {
     background: #333;
     color: white;
     border: 1px solid black; }
+  #contact .submit-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
 
 @media (max-width: 900px) {
   #about .about-content {

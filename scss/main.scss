@@ -311,6 +311,11 @@ body {
     color: white;
     border: 1px solid black;
   }
+  .submit-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
 }
 
 // Import media queries
