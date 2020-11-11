@@ -1,11 +1,19 @@
 @media (max-width: 900px) {
-  #about .about-content {
-    display: block;
+  #about {
+    height: auto;
+
+    .about-content {
+      grid-template-columns: 1fr;
+
+      .about-text {
+        margin-top: 1.5rem;
+      }
+    }
   }
 
-  #about .about-content .about-image img {
-    display: none;
-  }
+  // #about .about-content .about-image img {
+  //   display: none;
+  // }
   #showcase .showcase-content {
     background: rgba(0, 0, 0, 0);
   }
@@ -23,10 +31,65 @@
   }
 }
 
+@media (max-width: 768px) {
+  #navbar {
+    .container {
+      flex-direction: column;
+    }
+
+    ul {
+      margin-top: 10px;
+    }
+  }
+
+  // #about {
+  //   height: calc(100vh - 120px);
+  // }
+}
+
 /* Mobile Phones */
 
 @media (max-width: 500px) {
-  #navbar ul {
-    justify-content: center;
+  #navbar {
+    .phone-mobile {
+      display: block;
+      color: #fff;
+      font-size: 1rem;
+      border: 1px solid #fff;
+      padding: 7px 10px;
+      margin-top: 10px;
+    }
+    ul {
+      justify-content: center;
+
+      li a.phone {
+        display: none;
+      }
+    }
+  }
+
+  #work {
+    div.projects.container {
+      padding: 0 10px;
+    }
+  }
+
+  #contact {
+    div.contact-form.container {
+      padding: 0 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #about {
+    .about-content {
+      .about-image {
+        img {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
   }
 }

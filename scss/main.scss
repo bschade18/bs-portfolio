@@ -9,10 +9,6 @@
 a {
   text-decoration: none;
   color: $dark-color;
-
-  &:visited {
-    color: $dark-color;
-  }
 }
 
 p {
@@ -29,12 +25,12 @@ body {
 .container {
   max-width: 1100px;
   overflow: auto;
-  margin: auto;
+  margin: 0px auto;
   padding: 0 1.5rem;
 }
 
 .text-primary {
-  color: $dark-color;
+  color: #000;
 }
 
 .lg-heading {
@@ -83,13 +79,37 @@ body {
   border-radius: 10px;
 }
 
+// #navbar ul li a.phone {
+//   border: 1px solid #fff;
+//   padding: 7px 10px;
+// }
+
+// #navbar ul li a.phone:hover {
+//   border: 1px solid #ffe000;
+//   color: #ffe000;
+// }
 /* Navbar */
 #navbar {
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   background: $dark-color;
   position: sticky;
   top: 0;
   z-index: 2;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 1.5rem 1rem;
+
+    .footer-icons {
+      color: #fff;
+    }
+  }
+
+  .phone-mobile {
+    display: none;
+  }
 
   ul {
     list-style: none;
@@ -103,6 +123,12 @@ body {
       padding: 0.25rem 0.5rem;
       border-radius: 5px;
       display: block;
+    }
+
+    li a.phone {
+      border: 1px solid #fff;
+      padding: 7px 10px;
+      padding: 0.25rem 0.5rem;
     }
 
     a:hover {
@@ -188,6 +214,9 @@ body {
   border-bottom: 1px solid $dark-color;
   border-top: 1px solid $dark-color;
   padding: 1.5rem 0;
+  height: calc(100vh - 82px);
+  display: flex;
+  align-items: center;
 
   .about-content {
     display: grid;
@@ -198,12 +227,16 @@ body {
       flex: 1;
       display: flex;
       justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
       img {
         border-radius: 10px;
         border-radius: 50%;
         width: 350px;
+        width: 375px;
         height: 350px;
+        height: 375px;
       }
     }
 
@@ -223,6 +256,7 @@ body {
 #footer {
   text-align: center;
   background: $white-color;
+  background: $light-color;
   font-size: 1rem;
   line-height: 1.8;
   border-top: 1px solid black;
@@ -255,13 +289,21 @@ body {
 
 .icon-lg {
   font-size: 2.5rem;
+  font-size: 1.5rem;
   transition: transform 0.2s;
+  margin-left: 10px;
+  color: $white-color;
+}
+
+.icon-lg:visited {
+  color: $white-color;
 }
 
 /* Section: Contact Form */
 
 #contact {
-  background-color: $light-color;
+  background-color: $white-color;
+  border-top: 1px solid #000;
 
   form {
     padding: 1.5rem 0rem;
