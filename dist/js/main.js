@@ -22,3 +22,18 @@ window.addEventListener('scroll', function () {
     document.querySelector('#navbar').style.opacity = 1;
   }
 });
+
+// show more projects
+
+const showMoreBtn = document.querySelector('.show-btn');
+const showMore = document.querySelector('.show-more');
+
+showMoreBtn.addEventListener('click', () => {
+  showMore.classList.toggle('view');
+
+  if (showMoreBtn.innerHTML === 'Show Smaller Apps') {
+    showMoreBtn.innerHTML = 'Show Less';
+  } else {
+    showMoreBtn.innerHTML = 'Show Smaller Apps';
+  }
+});
