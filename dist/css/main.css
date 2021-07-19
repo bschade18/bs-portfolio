@@ -244,6 +244,7 @@ body {
     font-family: "Libre Franklin", sans-serif; }
   #contact .btn {
     display: inline-block;
+    cursor: pointer;
     color: #fff;
     background: black;
     border-radius: 5px;
