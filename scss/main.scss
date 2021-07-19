@@ -8,7 +8,7 @@
 
 a {
   text-decoration: none;
-  color: $dark-color;
+  color: #000;
 }
 
 p {
@@ -67,10 +67,6 @@ body {
   background: $light-color;
 }
 
-.bg-dark {
-  background: $dark-color;
-}
-
 .card {
   background: $white-color;
   padding-right: 1rem;
@@ -82,7 +78,7 @@ body {
 /* Navbar */
 #navbar {
   padding: 1.5rem 1rem;
-  background: $dark-color;
+  background: $primary-color;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -112,6 +108,7 @@ body {
       padding: 0.25rem 0.5rem;
       border-radius: 5px;
       display: block;
+      transition: background-color 1s ease-out;
     }
 
     li a.phone {
@@ -121,8 +118,8 @@ body {
     }
 
     a:hover {
-      background: $light-color;
-      color: $dark-color;
+      background-color: $light-color;
+      color: #000;
     }
   }
 }
@@ -161,6 +158,8 @@ body {
   width: 100%;
   text-align: center;
   padding: 1.5rem 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 
   .projects {
     display: grid;
@@ -196,18 +195,20 @@ body {
   }
   .show-btn {
     display: inline-block;
+    cursor: pointer;
     color: #fff;
-    background: $dark-color;
+    background: #000;
     border-radius: 5px;
-    border: 1px solid $dark-color;
+    border: 1px solid #000;
     padding: 0.75rem 1rem;
     font-family: $font-stack;
     margin-top: 1rem;
+    transition: background-color .3s;
 
     &:hover {
-      background: #333;
+      background-color: $primary-color;
       color: white;
-      border: 1px solid $dark-color;
+      border: 1px solid $primary-color;
     }
   }
 
@@ -223,8 +224,6 @@ body {
 /* About */
 #about {
   background: $white-color;
-  border-bottom: 1px solid $dark-color;
-  border-top: 1px solid $dark-color;
   padding: 1.5rem 0;
   height: calc(100vh - 82px);
   display: flex;
@@ -243,17 +242,14 @@ body {
       flex-direction: column;
 
       img {
-        border-radius: 10px;
         border-radius: 50%;
-        width: 350px;
         width: 375px;
-        height: 350px;
         height: 375px;
+        object-fit: cover;
       }
     }
 
     .about-text {
-      // padding: 1rem;
       line-height: 1.7;
       flex: 1;
     }
@@ -265,33 +261,12 @@ body {
 }
 
 /* Contact */
-#footer {
-  text-align: center;
-  background: $white-color;
-  background: $light-color;
-  font-size: 1rem;
-  line-height: 1.8;
-  border-top: 1px solid black;
-  padding: 1.5rem 0;
 
-  p {
-    margin: 0px;
-  }
-
-  .phone-number {
-    text-decoration: none;
-  }
-
-  .footer-icons {
-    margin: 1rem;
-  }
-}
-
-/* icons */
+/* Icons */
 .icon {
   font-size: 20px;
   padding: 0.5rem;
-  color: $dark-color;
+  color: #000;
   transition: transform 0.2s;
 
   &:hover {
@@ -304,7 +279,12 @@ body {
   font-size: 1.5rem;
   transition: transform 0.2s;
   margin-left: 10px;
+  margin-left: 16px;
   color: $white-color;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.15);
+  }
 }
 
 .icon-lg:visited {
@@ -315,7 +295,6 @@ body {
 
 #contact {
   background-color: $white-color;
-  border-top: 1px solid #000;
 
   form {
     padding: 1.5rem 0rem;
@@ -361,11 +340,12 @@ body {
     border-radius: 5px;
     border: 1px solid black;
     width: 100%;
+    transition: background-color .3s;
   }
   .btn:hover {
-    background: #333;
+    background-color: $primary-color;
     color: white;
-    border: 1px solid black;
+    border: 1px solid $primary-color;
   }
   .submit-btn {
     -webkit-appearance: none;
