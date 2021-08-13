@@ -13,7 +13,8 @@ p {
 body {
   font-family: "Libre Franklin", sans-serif;
   font-weight: bold;
-  line-height: 1.5; }
+  line-height: 1.5;
+  min-width: 250px; }
 
 /* Utility Class */
 .container {
@@ -297,6 +298,13 @@ body {
 @media screen and (max-width: 425px) {
   #about .about-content .about-image img {
     width: 300px;
-    height: 300px; }
+    width: 250px;
+    height: 300px;
+    height: 250px; }
   #about .about-content .about-text {
     text-align: center; } }
+
+@media screen and (max-width: 300px) {
+  #about .about-content .about-image img {
+    width: 200px;
+    height: 200px; } }
