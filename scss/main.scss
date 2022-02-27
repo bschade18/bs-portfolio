@@ -204,7 +204,7 @@ body {
     padding: 0.75rem 1rem;
     font-family: $font-stack;
     margin-top: 1rem;
-    transition: background-color .3s;
+    transition: background-color 0.3s;
 
     &:hover {
       background-color: $primary-color;
@@ -342,7 +342,7 @@ body {
     border-radius: 5px;
     border: 1px solid black;
     width: 100%;
-    transition: background-color .3s;
+    transition: background-color 0.3s;
   }
   .btn:hover {
     background-color: $primary-color;
@@ -354,6 +354,20 @@ body {
     -moz-appearance: none;
     appearance: none;
   }
+}
+
+#now-heading {
+  text-align: center;
+  margin-top: 5rem;
+  padding-bottom: 3rem;
+}
+#now {
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+}
+.now-text {
+  text-align: center;
 }
 
 // Import media queries

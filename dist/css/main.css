@@ -154,7 +154,7 @@ body {
     padding: 0.75rem 1rem;
     font-family: "Libre Franklin", sans-serif;
     margin-top: 1rem;
-    transition: background-color .3s; }
+    transition: background-color 0.3s; }
     #work .show-btn:hover {
       background-color: #0468cd;
       color: white;
@@ -251,7 +251,7 @@ body {
     border-radius: 5px;
     border: 1px solid black;
     width: 100%;
-    transition: background-color .3s; }
+    transition: background-color 0.3s; }
   #contact .btn:hover {
     background-color: #0468cd;
     color: white;
@@ -260,6 +260,19 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; }
+
+#now-heading {
+  text-align: center;
+  margin-top: 5rem;
+  padding-bottom: 3rem; }
+
+#now {
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 3rem; }
+
+.now-text {
+  text-align: center; }
 
 @media (max-width: 900px) {
   #about {
